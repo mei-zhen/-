@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">自我介紹</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">高中社團</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">大學社團</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">平常生活</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">未來規劃</button>     
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src=""><img src="擷取.PNG" width="861" height="208">  
+	  <p>嗨，我來自台灣高雄市鳳山區的一位19歲女生。生日2001年3月31日 一位牡羊女。接下來會有一些高中、大學時期的簡單介紹，很開心來到我的個人網站參觀。因為是學校的作業，做的不是很完美。
+	    
+</p>
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">高中社團</h2>
+    <p class="w3-opacity"><i>頹廢的高中:D 資訊科..班上男生多</i></p>
+    <p class="w3-justify">高中的時候，為了讓自己更有自信，選擇了舞蹈社，一個沒有男生的社團。 舞蹈社專門跳韓國女團KPOP，男團則是在熱舞社，常跳Gfriend、Blackpink...等。</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third"> </div>
+    <img src="2.PNG" width="502" height="339" alt=""/>    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">大學社團</h2>
+      <p class="w3-opacity w3-center"><i>以前:跳舞 現在:樂器</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">進了大學，第一件事除了認識朋友外，當然還要進社團玩
+這次選了跟高中時的性質完全不同的社團
+在社團認是學長，也學了以前沒碰過的古箏
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="3.PNG" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+          </div>
+        </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">平常生活</h2>
+    <p class="w3-opacity w3-center"><i>就只是當個宅女</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <p> <i class="fa fa-map-marker" style="width:30px"></i> 在家<br>
+          <i class="fa fa-phone" style="width:30px"></i> 勿擾<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> 不提供<br>
+        </p>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+		    <div class="w3-half">
+              <img src=
+              4.PNG>平常在家沒事都會自己練習竹笛，偶爾也會玩手機遊戲打發時間。</p>
+            </div>
+            <div class="w3-half">
+            </div>
+          </div> 
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<!-- Footer --> 
+<h2 class="w3-wide w3-center">未來規劃</h2>
+  <p>雖然前面只介紹娛樂方面，但我還是會注重課業
+
+因為現在念的科系，在未來不一定會找有相關的工作
+
+所以我目前規劃的是，暑假打工先讓自己有一個工作經驗
+
+在未來出社會能有一份穩定的工作，幫忙一起分擔家庭經濟</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
